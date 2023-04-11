@@ -1,0 +1,166 @@
+\documentclass[journal abbreviation, manuscript]{copernicus}
+
+\renewcommand{\thetable}{S\arabic{table}} 
+\renewcommand{\thefigure}{S\arabic{figure}}
+\begin{document}
+
+\begin{center} 
+\large \bf{Supplementary Information}
+\end{center}
+
+\begin{center}
+\linespread{1.5}
+\Large\bf{Impacts of spatial heterogeneity of anthropogenic aerosol emissions in a high-resolution Earth system model\\}
+\end{center}
+
+\begin{center}
+\linespread{2}
+\large{Taufiq Hassan, Kai Zhang, Jianfeng Li, Balwinder Singh, Shixuan Zhang, Hailong Wang, \& Po-Lun Ma\\}
+\small{Atmospheric Sciences and Global Change Division, Pacific Northwest National Laboratory, Richland, WA, USA.\\}
+\end{center}
+
+\small{Correspondence to Taufiq Hassan (taufiq.hassan@pnnl.gov) and Kai Zhang (kai.zhang@pnnl.gov)}
+
+\newpage
+\noindent\textbf{Contents of this file}
+\begin{enumerate}
+\linespread{2}
+\item {\bf Table S1 and S2}
+\item {\bf Figures S1 to S10}
+\end{enumerate}
+
+\clearpage
+\begin{table}
+\linespread{1.5}
+\caption{EAMv2 anthropogenic aerosol emissions data statistics in the default emission treatment for present-day (PD) LR simulations. Statistics are shown for both the surface and elevated emissions of different aerosol species. All estimates are over the North America land surface. NMB, NStdDevB, and N\_RMSE are defined as $(\frac{\sum{(emis_{lin}-emis_{accurate})}}{\sum{emis_{accurate}}}) \times 100 \%$, $\frac{stdDev_{lin}-stdDev_{accurate}}{stdDev_{accurate}}$, $\frac{RMSE}{stdDev_{accurate}} \times 100 \%$ respectively. The “accurate” subscript indicates data that preserve spatial heterogeneity and conserve mass. The “lin” subscript indicates linearly interpolated data used in the default treatment. Units of Mean, StdDev, and RMSE are in Gg S yr$^{-1}$ (Gg C yr$^{-1}$) for Sulfate (BC and POM) aerosol emissions. N\_RMSE and NMB are in percentage (\%). NStdDevB is unitless.}
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c}%{llrrrrrr}
+\hline
+%\toprule
+Aerosol & Emission space &  \multicolumn {1}{p{2cm}|}{\centering Mean [Gg/yr] \\(accurate) } &  NMB [\%] &  \multicolumn {1}{p{2cm}|}{\centering StdDev [Gg/yr] \\(accurate) } &  NStdDevB &   RMSE &  N\_RMSE [\%]
+\\
+\hline
+%\midrule
+     BC &        surface &                   0.0250 &    2.504 &                      0.049 &    -0.209 & 0.0220 &      45 \\
+     &       elevated &                   0.0079 &    0.902 &                      0.054 &    -0.102 & 0.0180 &      34 \\ \hline
+    POM &        surface &                   0.0900 &    2.924 &                      0.200 &    -0.204 & 0.0850 &      42 \\
+     &       elevated &                   0.2020 &    0.285 &                      1.558 &    -0.100 & 0.5260 &      33 \\ \hline
+    SO4 &        surface &                   0.0034 &    0.219 &                      0.006 &    -0.140 & 0.0021 &      36 \\
+     &       elevated &                   0.0250 &    2.052 &                      0.079 &    -0.276 & 0.0460 &      57 \\ \hline
+%\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\begin{table}
+\linespread{1.5}
+\caption{EAMv2 simulated source-sink statistics from RRM-SE-PD and RRM-PD simulations. Statistics are based on annual mean estimates for both the total and contributing processes for different aerosol species. All estimates are over the North America land surface. N\_RMSE is defined as in Table 1.}
+\centering
+%\setlength\extrarowheight{0pt}
+\begin{tabular}{c|c|c|c|c|c}%{llllll}
+\hline
+%\toprule
+Aerosol species & Sources / & Decomposed process &         Mean &         RMSE & N\_RMSE \\
+%\midrule
+             &    Sinks &                 & [Kg m$^{-2}$ s$^{-1}$] & [Kg m$^{-2}$ s$^{-1}$] &    [\%] \\ \hline
+             BC & Sources &              Total &      0.00002 &     0.000046 &     71 \\
+             &      &          Surf emis &     0.000015 &     0.000023 &     67 \\
+             &      &          Elev emis &     0.000006 &      0.00004 &     72 \\ \hline
+             &   Sinks &              Total &    -0.000017 &     0.000006 &     45 \\
+             &      &     Dry dep (Grav) &          0.0 &          0.0 &     15 \\
+             &      &     Dry dep (Turb) &     0.000007 &     0.000006 &     58 \\
+             &      &            Wet dep (incloud, strat) &    -0.000007 &          0.0 &     13 \\
+             &      &            Wet dep (incloud, conv) &    -0.000003 &          0.0 &     12 \\
+             &      &            Wet dep (belowcloud)  &         -0.0 &          0.0 &     13 \\ \hline
+            POM & Sources &              Total &     0.000197 &     0.001136 &     72 \\
+             &      &          Surf emis &     0.000052 &     0.000084 &     62 \\
+             &      &          Elev emis &     0.000144 &     0.001133 &     72 \\ \hline
+                           &   Sinks &              Total &    -0.000131 &     0.000029 &     34 \\
+             &      &     Dry dep (Grav) &     0.000003 &          0.0 &     17 \\
+             &      &     Dry dep (Turb) &     0.000048 &     0.000028 &     45 \\
+             &      &            Wet dep (incloud, strat) &    -0.000056 &     0.000005 &     13 \\
+             &      &            Wet dep (incloud, conv)  &    -0.000023 &     0.000003 &     19 \\
+             &      &            Wet dep (belowcloud) &    -0.000001 &          0.0 &     18 \\ \hline
+        Sulfate & Sources &              Total &       0.0001 &     0.000037 &     36 \\
+             &      &          Surf emis &          0.0 &          0.0 &     54 \\
+             &      &          Elev emis &     0.000005 &     0.000014 &     85 \\
+             &      &  Gas-aero exchange &     0.000023 &      0.00001 &     32 \\
+             &      &    AQ chem (H2SO4) &     0.000001 &     0.000001 &     45 \\
+             &      &      AQ chem (SO4) &      0.00007 &     0.000017 &     25 \\ \hline
+             &   Sinks &              Total &    -0.000103 &     0.000006 &      9 \\
+             &      &     Dry dep (Grav) &     0.000004 &     0.000001 &     20 \\
+             &      &     Dry dep (Turb) &     0.000015 &     0.000001 &     11 \\
+             &      &            Wet dep (incloud, strat) &    -0.000067 &     0.000005 &     11 \\
+             &      &            Wet dep (incloud, conv) &    -0.000017 &     0.000002 &     10 \\
+             &      &            Wet dep (belowcloud) &    -0.000001 &          0.0 &     11 \\ \hline
+\end{tabular}
+\end{table}
+
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG01.png}
+\caption{Spatial distribution of difference in surface (top) and elevated (bottom) emissions used in RRM-SE-PD and RRM-PD over North America for (a) Black Carbon (BC), (b) Primary Organic Matter (POM), and (c) Sulfate (SO4) aerosols. The units are in Kg/m$^{2}$/s. }
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG02.png}
+\caption{Simulated spatial distribution of annual mean aerosol surface concentration from LR-PD (left column) and the relative difference between LR-SE-PD and LR-PD (right column) over North America. Distributions are shown for (a, b) Black Carbon (BC), (c, d) Primary Organic Matter (POM), and (e, f) Sulfate aerosols. The relative difference for field X is calculated as: $(\frac{X_{se}-X_{def}}{X_{def}}) \times 100 \%$, where “se” and “def” subscripts refer to the simulations with new and default emission treatment respectively. Mean, RMSE and normalized RMSE (N\_RMSE) are indicated at the top right corner of the panels. Mean and RMSE has a unit of $\mu{g}\ m^{-3}$. N\_RMSE is defined as in Table 2. }
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG03.png}
+\caption{Spatial distribution of simulated annual mean source and major contributing components of BC over North America from PD RRM simulations. The distribution from RRM-PD (with default emission treatment) (left column) and the associated relative difference between RRM-SE-PD (with new emission treatment) and RRM-PD (right column) are shown. }
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG04.png}
+\caption{Spatial distribution of simulated annual mean sinks and major contributing components of BC over North America from PD RRM simulations. The distribution from RRM-PD (with default emission treatment) (left column) and the associated relative difference between RRM-SE-PD (with new emission treatment) and RRM-PD (right column) are shown. }
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG05.png}
+\caption{Same as Fig. S3, except for POM. }
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG06.png}
+\caption{Same as Fig. S4, except for POM. }
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG07.png}
+\caption{Same as Fig. S3, except for Sulfate. }
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG08.png}
+\caption{Same as Fig. S3, except for sulfate components. }
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG09.png}
+\caption{Same as Fig. S4, except for Sulfate. }
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=16cm]{SFIG10.png}
+\caption{Spatial distribution of anthropogenic aerosol radiative forcing ($\Delta{F}$) over North America at the top of atmosphere (TOA) from the simulations using the default emission treatment (left column) and the difference with simulations using new emission treatment (right column). ALL indicates the total $\Delta{F}$ calculated from PD (2014) - PI (1850) simulations. ACI refers to $\Delta{F}$ from aerosol-cloud interactions. “SW” and “LW” subscripts indicate shortwave and longwave $\Delta{F}$. Mean and RMSE has a unit of Wm-2. Mean, RMSE and normalized RMSE (N\_RMSE) are indicated at the top right corner of the panels. N\_RMSE is defined as in Table 2.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{SFIG11.png}
+\caption{Scatter plots between simulated and observed monthly mean surface concentrations of (a, e) Black Carbon (BC) and (b, f) Primary Organic Matter (POM), (c, g) Sulfate (SO$_4$) aerosols and (d, h) aerosol optical depth (AOD). Observations of the surface concentrations and AOD are from IMPROVE and AERONET sites respectively, for the simulation year of 2016. Scatter plot statistics compare the spearman’s correlation (R), number of data points (n), RMSE, NMB values between (a$-$d) LR-PD and (e$-$h) LR-SE-PD simulation. RMSE and NMB are defined as in Table 2. Solid lines indicate the 1:1 ratio, and the dashed lines indicate the 1:2 and 2:1 ratio. The values at the top of each column indicate the observed mean.}
+\end{figure}
+
+\end{document}

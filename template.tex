@@ -1,0 +1,523 @@
+%% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
+%% ---------------------------------
+%% This template should be used for copernicus.cls
+%% The class file and some style files are bundled in the Copernicus Latex Package, which can be downloaded from the different journal webpages.
+%% For further assistance please contact Copernicus Publications at: production@copernicus.org
+%% https://publications.copernicus.org/for_authors/manuscript_preparation.html
+
+
+%% Please use the following documentclass and journal abbreviations for preprints and final revised papers.
+%% Development and technical papers
+%% 2-column papers and preprints
+\documentclass[journal abbreviation, manuscript]{copernicus}
+
+
+
+%% Journal abbreviations (please use the same for preprints and final revised papers)
+
+
+% Advances in Geosciences (adgeo)
+% Advances in Radio Science (ars)
+% Advances in Science and Research (asr)
+% Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
+% Annales Geophysicae (angeo)
+% Archives Animal Breeding (aab)
+% Atmospheric Chemistry and Physics (acp)
+% Atmospheric Measurement Techniques (amt)
+% Biogeosciences (bg)
+% Climate of the Past (cp)
+% DEUQUA Special Publications (deuquasp)
+% Drinking Water Engineering and Science (dwes)
+% Earth Surface Dynamics (esurf)
+% Earth System Dynamics (esd)
+% Earth System Science Data (essd)
+% E&G Quaternary Science Journal (egqsj)
+% EGUsphere (egusphere) | This is only for EGUsphere preprints submitted without relation to an EGU journal.
+% European Journal of Mineralogy (ejm)
+% Fossil Record (fr)
+% Geochronology (gchron)
+% Geographica Helvetica (gh)
+% Geoscience Communication (gc)
+% Geoscientific Instrumentation, Methods and Data Systems (gi)
+% Geoscientific Model Development (gmd)
+% History of Geo- and Space Sciences (hgss)
+% Hydrology and Earth System Sciences (hess)
+% Journal of Bone and Joint Infection (jbji)
+% Journal of Micropalaeontology (jm)
+% Journal of Sensors and Sensor Systems (jsss)
+% Magnetic Resonance (mr)
+% Mechanical Sciences (ms)
+% Natural Hazards and Earth System Sciences (nhess)
+% Nonlinear Processes in Geophysics (npg)
+% Ocean Science (os)
+% Polarforschung - Journal of the German Society for Polar Research (polf)
+% Primate Biology (pb)
+% Proceedings of the International Association of Hydrological Sciences (piahs)
+% Safety of Nuclear Waste Disposal (sand)
+% Scientific Drilling (sd)
+% SOIL (soil)
+% Solid Earth (se)
+% State of the Planet (sp)
+% The Cryosphere (tc)
+% Weather and Climate Dynamics (wcd)
+% Web Ecology (we)
+% Wind Energy Science (wes)
+
+
+%% \usepackage commands included in the copernicus.cls:
+%\usepackage[german, english]{babel}
+%\usepackage{tabularx}
+%\usepackage{cancel}
+%\usepackage{multirow}
+%\usepackage{supertabular}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%\usepackage{amsthm}
+%\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{rotating}
+
+
+\begin{document}
+
+\title{Impacts of spatial heterogeneity of anthropogenic aerosol emissions in a high-resolution Earth system model
+}
+
+
+% \Author[affil]{given_name}{surname}
+
+\Author[1]{Taufiq}{Hassan}
+\Author[1]{Kai}{Zhang}
+\Author[1]{Jianfeng}{Li}
+\Author[1]{Balwinder}{Singh}
+\Author[1]{Shixuan}{Zhang}
+\Author[1]{Hailong}{Wang}
+\Author[1]{Po-Lun}{Ma}
+
+\affil[1]{Atmospheric Sciences and Global Change Division, Pacific Northwest National Laboratory, Richland, WA, USA}
+
+%% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
+
+%% If an author is deceased, please mark the respective author name(s) with a dagger, e.g. "\Author[2,$\dag$]{Anton}{Smith}", and add a further "\affil[$\dag$]{deceased, 1 July 2019}".
+
+%% If authors contributed equally, please mark the respective author names with an asterisk, e.g. "\Author[2,*]{Anton}{Smith}" and "\Author[3,*]{Bradley}{Miller}" and add a further affiliation: "\affil[*]{These authors contributed equally to this work.}".
+
+
+\correspondence{Taufiq Hassan (taufiq.hassan@pnnl.gov) and Kai Zhang (kai.zhang@pnnl.gov)}
+
+\runningtitle{TEXT}
+
+\runningauthor{TEXT}
+
+
+
+
+
+\received{}
+\pubdiscuss{} %% only important for two-stage journals
+\revised{}
+\accepted{}
+\published{}
+
+%% These dates will be inserted by Copernicus Publications during the typesetting process.
+
+
+\firstpage{1}
+
+\maketitle
+
+
+
+%\begin{abstract}
+%TEXT
+%\end{abstract}
+
+\input{abstract}
+
+%\copyrightstatement{TEXT} %% This section is optional and can be used for copyright transfers.
+
+
+%\introduction  %% \introduction[modified heading if necessary]
+%TEXT
+\input{introduction}
+
+\input{methods}
+%\section{HEADING}
+%TEXT
+\input{results}
+
+\input{conclusions}
+%\subsubsection{HEADING}
+%TEXT
+
+
+%\conclusions  %% \conclusions[modified heading if necessary]
+%TEXT
+
+%% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
+%% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
+
+%\codeavailability{The E3SMv2 source code is available at \href{https://github.com/E3SM-Project/E3SM/releases/tag/v2.0.0}{https://github.com/E3SM-Project/E3SM/releases/tag/v2.0.0} (E3SM Project, 2018) (last access: April, 2023).} %% use this section when having only software code available
+
+
+%\dataavailability{TEXT} %% use this section when having only data sets available
+
+
+\codedataavailability{The E3SMv2 source code is available at \href{https://doi.org/10.11578/E3SM/dc.20210927.1}{https://doi.org/10.11578/E3SM/dc.20210927.1} (E3SM Project, 2021). The ERA5 data can be obtained from Copernicus Climate Change Service Climate Data Store (CDS), at \href{https://doi.org/10.24381/cds.6860a573}{https://doi.org/10.24381/cds.6860a573} \citep{hersbach2020era5}. The Python package source code is available at https://github.com/TaufiqHassan/ggen. Codes and data for the analysis are available at . . .} %% use this section when having data sets and software code available
+
+
+%\sampleavailability{TEXT} %% use this section when having geoscientific samples available
+
+
+%\videosupplement{TEXT} %% use this section when having video supplements available
+
+
+%\appendix
+%\section{}    %% Appendix A
+
+%\subsection{}     %% Appendix A1, A2, etc.
+
+
+\noappendix       %% use this to mark the end of the appendix section. Otherwise the figures might be numbered incorrectly (e.g. 10 instead of 1).
+
+%% Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
+
+%% Option 1: If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
+%% They will be correctly named automatically.
+
+%% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
+%% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
+
+%\appendixfigures  %% needs to be added in front of appendix figures
+
+%\appendixtables   %% needs to be added in front of appendix tables
+
+%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
+
+
+
+\authorcontribution{TH and KZ designed the study and developed the new emission treatment in E3SM with help from BS. TH designed the Python package and conducted the simulations with instructions from KZ. HW provided the high-resolution emission data. KZ and SZ determined the nudging strategy, and TH prepared the ERA5 nudging data with instructions from SZ and KZ. TH wrote the codes and performed the analyses with discussion with KZ, JL, and PM. TH and KZ wrote the original manuscript; all authors reviewed and edited the manuscript.} %% this section is mandatory
+
+\competinginterests{One of the (co-)authors is a member of the editorial board of Geoscientific Model Development. Other authors have no other competing interests to declare.} %% this section is mandatory even if you declare that no competing interests are present
+
+%\disclaimer{TEXT} %% optional section
+
+\begin{acknowledgements}
+This work is supported by the Enabling Aerosol–cloud interactions at GLobal convection-permitting scalES (EAGLES) project (project no. 74358). The EAGLES project is sponsored by the U.S. Department of Energy, Office of Science, Office of Biological and Environmental Research, Earth System Model Development (ESMD) program area. The Pacific Northwest National Laboratory (PNNL) is operated for the DOE by the Battelle Memorial Institute under Contract DE-AC05-76RL01830. This research used high-performance computing resources from the PNNL Research Computing and resources of the National Energy Research Scientific Computing Center (NERSC), operated under Contract No. DE-AC02-05CH11231.
+\end{acknowledgements}
+
+
+
+
+%% REFERENCES
+
+%% The reference list is compiled as follows:
+\bibliographystyle{copernicus}
+\bibliography{reference.bib}
+
+\clearpage
+\begin{table}
+\caption{List of simulations performed and analyzed in this study. All simulations are nudged towards the ERA5 reanalysis. High resolution mesh (0.25$^{\circ}$) is over the North America in Regionally Refined Mesh (RRM) simulations. RLL refers to the Regular latitude/longitude grid. SE refers to the new emission treatment.}
+\centering
+\begin{tabular}{c|c|c|c|c|c}
+\hline
+\toprule
+ Group & Simulation name & Model Resolution & Resolution of emission data & Emission period &       Remapping method \\ \hline
+\midrule
+   1 &      LR-PD (PI) &          ne30pg2 &                  \textasciitilde 2 deg RLL &     2014 (1850) &   Linear interpolation \\ 
+    &   LR-SE-PD (PI) &          ne30pg2 &                     ne30pg2 &     2014 (1850) & Conservative remapping \\ \hline
+   2 &     RRM-PD (PI) &           NA RRM &                  \textasciitilde 2 deg RLL &     2014 (1850) &   Linear interpolation \\ 
+    &  RRM-SE-PD (PI) &           NA RRM &                      NA RRM &     2014 (1850) & Conservative remapping \\ \hline
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\begin{table}
+\caption{EAMv2 anthropogenic aerosol emissions data statistics in the default emission treatment for present-day (PD) LR simulations. Statistics are shown for both the surface and elevated emissions of different aerosol species. All estimates are over the North America land surface. NMB, NStdDevB, and N\_RMSE are defined as $(\frac{\sum{(emis_{lin}-emis_{accurate})}}{\sum{emis_{accurate}}}) \times 100 \%$, $\frac{stdDev_{lin}-stdDev_{accurate}}{stdDev_{accurate}}$, $\frac{RMSE}{stdDev_{accurate}} \times 100 \%$ respectively. The “accurate” subscript indicates data that preserve spatial heterogeneity and conserve mass. The “lin” subscript indicates linearly interpolated data used in the default treatment. Units of Mean, StdDev, and RMSE are in Gg S yr$^{-1}$ (Gg C yr$^{-1}$) for Sulfate (BC and POM) aerosol emissions. N\_RMSE and NMB are in percentage (\%). NStdDevB is unitless.}
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\hline
+\toprule
+Aerosol & Emission space &  \multicolumn {1}{p{2cm}|}{\centering Mean [Gg/yr] \\(accurate) } &  NMB [\%] &  \multicolumn {1}{p{2cm}|}{\centering StdDev [Gg/yr] \\(accurate) } &  NStdDevB &   RMSE &  N\_RMSE [\%] \\
+\hline
+\midrule
+     BC &       surface &                   0.0280 &    8.398 &                     0.0660 &    -0.395 &        0.0450 &          67 \\
+        &      elevated &                   0.0091 &    2.606 &                     0.0910 &    -0.423 &        0.0650 &          72 \\ \hline
+    POM &       surface &                   0.1020 &    9.899 &                     0.2650 &    -0.369 &        0.1650 &          62 \\
+        &      elevated &                   0.2320 &    1.270 &                     2.6120 &    -0.422 &        1.8740 &          71 \\ \hline
+    SO4 &       surface &                   0.0030 &    1.085 &                     0.0063 &    -0.251 &        0.0034 &          54 \\
+        &      elevated &                   0.0270 &    5.648 &                     0.0980 &    -0.525 &        0.0830 &          84 \\ \hline
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\begin{figure}[t]
+%\includegraphics[width=18cm]{fig01.png}
+\caption{The model-native grid configuration for (a) low-resolution, LR (ne30pg2) grid, and (b) regionally refined mesh over North America (NA RRM) are shown. The locations for point-source aerosol measurement sites over North America from IMPROVE and AERONET data set are also shown overlaid on the LR grid in panel (a).}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+%\includegraphics[width=17cm]{fig02.pdf}
+\caption{Flowcharts illustrating how the aerosols and precursor gas emission is handled in the EAMv2 simulation. Light green boxes in panel (a) depicts the modules impacted during one time step of the physics and dynamics calculations. Panel (b) compares the default and the new emission treatment. The key differences are depicted by light orange and light blue boxes for default and new emission treatment respectively.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+%\includegraphics[width=17.5cm]{fig03.png}
+\caption{Spatial distribution of the present-day surface BC emissions (top) and column integrated SO2 emissions (bottom) from the original high-resolution data (a, d), the default emission treatment (b, e), and the improved emission treatment (c, f) for RRM simulations. Distributions are shown over eastern (western) United States for BC (SO2) emissions in Kg/m2/s units. Red circles in panel b and e indicate major cities with large surface BC and SO2 emissions respectively. Markers titled 1, 2, 3, 4, 5, 6 and 7 depict Boston, New York, Chicago, Toronto, Montreal, Los Angeles, and San Francisco respectively.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+%\includegraphics[width=17.5cm]{fig04.png}
+\caption{Simulated spatial distribution of annual mean aerosol surface concentration from RRM-PD (left column) and the relative difference between RRM-SE-PD and RRM-PD (right column) over North America. Distributions are shown for (a, b) Black Carbon (BC), (c, d) Primary Organic Matter (POM), and (e, f) Sulfate aerosols. The relative difference for field X is calculated as: $(\frac{X_{se}-X_{def}}{X_{def}}) \times 100 \%$, where “se” and “def” subscripts refer to the simulations with new and default emission treatment respectively. Mean, RMSE and normalized RMSE (N\_RMSE) are indicated at the top right corner of the panels. Mean and RMSE has a unit of $\mu{g}\ m^{-3}$. N\_RMSE is defined as in Table 2.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+%\includegraphics[width=17.5cm]{fig05.pdf}
+\caption{Quantitative distribution of annual mean relative differences between RRM-SE-PD and RRM-PD for simulated aerosol burden, surface concentration, aerosol sources and aerosol sinks. Distributions are shown for (a) BC, (b) POM, and (c) sulfate aerosols in percentage. Simulated fields are masked by emission differences between the new and default treatment. Masking is applied for regions above 75th percentile (>75 percentile), below 25th percentile (<25 percentile), and within 25/75th percentiles over North America. Urban-scale differences are also shown considering major cities with larger anthropogenic aerosol emissions.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+%\includegraphics[width=17.5cm]{fig06.pdf}
+\caption{Daily mean Black carbon (BC) concentration profile and burden time-series during the month of July of 2016 near sharp spatial emission gradient in eastern North America. Simulated vertical distribution and burden time-series from RRM-PD (left column) and the relative difference between RRM-SE-PD and RRM-PD (right column) are shown. Panels a-d depicts highly polluted location, with panels e-h depicting nearby less polluted location.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+%\includegraphics[width=15cm]{fig07.png}
+\caption{Spatial distribution of annual mean simulated (a, b) aerosol extinction at surface, (c, d) aerosol absorption at surface, (e, f) Aerosol Optical Depth (AOD), and (g, h) absorbing AOD from RRM-PD (left column) and the relative difference between RRM-SE-PD and RRM-PD (right column) over North America. The relative difference for field X is calculated as: $(\frac{X_{se}-X_{def}}{X_{def}}) \times 100 \%$, where “se” and “def” subscripts refer to the simulations with new and default emission treatment respectively. Mean, RMSE and normalized RMSE (N\_RMSE) are indicated at the top right corner of the panels. Mean and RMSE has a unit of $\mu{g}\ m^{-3}$. N\_RMSE is defined as in Table 2.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{fig08.pdf}
+\caption{Daily mean aerosol extinction and absorption time-series during the month of July of 2016 near sharp spatial emission gradient in northeast United States. Simulated aerosol extinction profile, absorption profile, AOD, and absorption AOD (AAOD) time-series from RRM-PD (left column) and the relative difference between RRM-SE-PD and RRM-PD (right column) are shown.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{fig09.pdf}
+\caption{Contribution of the decomposed aerosol source and sink processes in EAMv2 simulations for Black Carbon (BC), Primary Organic Matter (POM), and Sulfate (SO4) aerosols. All estimates are from annual means over North America. Legend for sources and sinks are shown separately at the top right corner of each panel. Decomposed dry deposition processes “Grav” and “Turb” refers to the gravitational settling and turbulent deposition respectively.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{fig10.pdf}
+\caption{Error estimates of the total and decomposed processes contributing to the simulated sources and sinks of BC and POM from present-day (PD) RRM simulations. All RMSE estimates are over the North America land surface. Normalized RMSE is defined as $N\_RMSE_{Total} \times \frac{Weight_{i} \times N\_RMSE_{i}}{\sum{(Weight_{i} \times N\_RMSE_{i})}}$ , where N\_RMSE is defined as in Table 2, weights are from Figure 6, and subscript “i” indicates decomposed process. The solid bars represent the normalized RMSE for the total source and sink. The hatched bars are the decomposed processes normalized to the total N\_RMSE values. The “Wdep” bars refer to the wet deposition components.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17.5cm]{fig11.pdf}
+\caption{Error estimates of the total and decomposed processes contributing to the simulated sources and sinks of Sulfate aerosols from present-day (PD) RRM simulations. All RMSE estimates are over the North America land surface. Normalized RMSE is defined as $N\_RMSE_{Total} \times \frac{Weight_{i} \times N\_RMSE_{i}}{\sum{(Weight_{i} \times N\_RMSE_{i})}}$ , where N\_RMSE is defined as in Table 2, weights are from Figure 6, and subscript “i” indicates decomposed process. The solid bars represent the normalized RMSE for the total source and sink. The hatched bars are the decomposed processes normalized to the total N\_RMSE values. The “Wdep” bars refer to the wet deposition components.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=16.5cm]{fig12.pdf}
+\caption{Scatter plots between simulated and observed monthly mean surface concentrations of (a, c) Black Carbon (BC) and (b, d) Primary Organic Matter (POM). Observations of the surface concentrations are from IMPROVE for the simulation year of 2016. Scatter plot statistics compare the spearman’s correlation (R), number of data points (n), RMSE, NMB values between (a, b) RRM-PD and (c, d) RRM-SE-PD simulation. RMSE and NMB are defined as in Table 2. Solid lines indicate the 1:1 ratio, and the dashed lines indicate the 1:2 and 2:1 ratio. The values at the top of each column indicate the observed mean.fig14}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=17cm]{fig13.pdf}
+\caption{Boxplot comparison of the daily mean distribution for (a) BC and (b) POM surface concentrations from RRM-PD simulation, RRM-SE-PD simulation and IMPROVE network measurements. The whiskers are based on 1.5 times interquartile range (IQR). Distributions are plotted for different seasons over the simulation year, with red diamonds indicating the seasonal means.}
+\end{figure}
+
+\clearpage
+\begin{figure}[t]
+\includegraphics[width=16.5cm]{fig14.pdf}
+\caption{Scatter plots between simulated and observed monthly mean surface concentrations of (a, c) sulfate (SO4) aerosols and (b, d) Aerosol Optical Depth (AOD) at 550 nm. Observations of the surface concentrations and AOD are from IMPROVE and AERONET respectively for the simulation year of 2016. Scatter plot statistics compare the spearman’s correlation (R), number of data points (n), RMSE, NMB values between (a, b) RRM-PD and (c, d) RRM-SE-PD simulation. RMSE and NMB are defined as in Table 2. Solid lines indicate the 1:1 ratio, and the dashed lines indicate the 1:2 and 2:1 ratio. The values at the top of each column indicate the observed mean.}
+\end{figure}
+
+%\begin{thebibliography}{}
+
+%\bibitem[AUTHOR(YEAR)]{LABEL1}
+%REFERENCE 1
+
+%\bibitem[AUTHOR(YEAR)]{LABEL2}
+%REFERENCE 2
+
+%\end{thebibliography}
+
+%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
+%% authors experienced with BibTeX only have to include the following two lines:
+%%
+%% \bibliographystyle{copernicus}
+%% \bibliography{example.bib}
+%%
+%% URLs and DOIs can be entered in your BibTeX file as:
+%%
+%% URL = {http://www.xyz.org/~jones/idx_g.htm}
+%% DOI = {10.5194/xyz}
+
+
+%% LITERATURE CITATIONS
+%%
+%% command                        & example result
+%% \citet{jones90}|               & Jones et al. (1990)
+%% \citep{jones90}|               & (Jones et al., 1990)
+%% \citep{jones90,jones93}|       & (Jones et al., 1990, 1993)
+%% \citep[p.~32]{jones90}|        & (Jones et al., 1990, p.~32)
+%% \citep[e.g.,][]{jones90}|      & (e.g., Jones et al., 1990)
+%% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
+%% \citeauthor{jones90}|          & Jones et al.
+%% \citeyear{jones90}|            & 1990
+
+
+
+%% FIGURES
+
+%% When figures and tables are placed at the end of the MS (article in one-column style), please add \clearpage
+%% between bibliography and first table and/or figure as well as between each table and/or figure.
+
+% The figure files should be labelled correctly with Arabic numerals (e.g. fig01.jpg, fig02.png).
+
+
+%% ONE-COLUMN FIGURES
+
+%%f
+%\begin{figure}[t]
+%\includegraphics[width=8.3cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure}
+%
+%%% TWO-COLUMN FIGURES
+%
+%%f
+%\begin{figure*}[t]
+%\includegraphics[width=12cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure*}
+%
+%
+%%% TABLES
+%%%
+%%% The different columns must be seperated with a & command and should
+%%% end with \\ to identify the column brake.
+%
+%%% ONE-COLUMN TABLE
+%
+%%t
+%\begin{table}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table}
+%
+%%% TWO-COLUMN TABLE
+%
+%%t
+%\begin{table*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table*}
+%
+%%% LANDSCAPE TABLE
+%
+%%t
+%\begin{sidewaystable*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{sidewaystable*}
+%
+%
+%%% MATHEMATICAL EXPRESSIONS
+%
+%%% All papers typeset by Copernicus Publications follow the math typesetting regulations
+%%% given by the IUPAC Green Book (IUPAC: Quantities, Units and Symbols in Physical Chemistry,
+%%% 2nd Edn., Blackwell Science, available at: http://old.iupac.org/publications/books/gbook/green_book_2ed.pdf, 1993).
+%%%
+%%% Physical quantities/variables are typeset in italic font (t for time, T for Temperature)
+%%% Indices which are not defined are typeset in italic font (x, y, z, a, b, c)
+%%% Items/objects which are defined are typeset in roman font (Car A, Car B)
+%%% Descriptions/specifications which are defined by itself are typeset in roman font (abs, rel, ref, tot, net, ice)
+%%% Abbreviations from 2 letters are typeset in roman font (RH, LAI)
+%%% Vectors are identified in bold italic font using \vec{x}
+%%% Matrices are identified in bold roman font
+%%% Multiplication signs are typeset using the LaTeX commands \times (for vector products, grids, and exponential notations) or \cdot
+%%% The character * should not be applied as mutliplication sign
+%
+%
+%%% EQUATIONS
+%
+%%% Single-row equation
+%
+%\begin{equation}
+%
+%\end{equation}
+%
+%%% Multiline equation
+%
+%\begin{align}
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8
+%\end{align}
+%
+%
+%%% MATRICES
+%
+%\begin{matrix}
+%x & y & z\\
+%x & y & z\\
+%x & y & z\\
+%\end{matrix}
+%
+%
+%%% ALGORITHM
+%
+%\begin{algorithm}
+%\caption{...}
+%\label{a1}
+%\begin{algorithmic}
+%...
+%\end{algorithmic}
+%\end{algorithm}
+%
+%
+%%% CHEMICAL FORMULAS AND REACTIONS
+%
+%%% For formulas embedded in the text, please use \chem{}
+%
+%%% The reaction environment creates labels including the letter R, i.e. (R1), (R2), etc.
+%
+%\begin{reaction}
+%%% \rightarrow should be used for normal (one-way) chemical reactions
+%%% \rightleftharpoons should be used for equilibria
+%%% \leftrightarrow should be used for resonance structures
+%\end{reaction}
+%
+%
+%%% PHYSICAL UNITS
+%%%
+%%% Please use \unit{} and apply the exponential notation
+
+
+\end{document}
